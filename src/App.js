@@ -11,8 +11,11 @@ function App() {
       <div className="App">
         <h1>App Page</h1>
         <Nav />
-        <Route path='/about' component={About}/>
-        <Route path='/shop' component={Shop} />
+        <Switch>
+          <Route path='/' exact component={() => <h1>Home Page</h1>} />
+          <Route path='/about' component={About} />
+          <Route path='/shop' component={Shop} />
+        </Switch>
       </div>
     </Router>
 
