@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from './Nav';
-import About from './About';
+import About from './About/About';
 import Albums from './Albums/Albums';
 import AlbumDetail from './Albums/albumDetail';
 import '../style.css';
