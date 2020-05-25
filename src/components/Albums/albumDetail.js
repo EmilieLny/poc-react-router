@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Spin } from 'antd';
 
 function AlbumDetail({match}) {
 
@@ -15,7 +16,8 @@ function AlbumDetail({match}) {
 
     return (
         <div className="Albums">
-            <h2>Album name: {album.title}</h2>
+            <h3>Album name</h3>
+            {album.title ? <p>{album.title}</p> : <Spin />}
         </div>
     );
 }
