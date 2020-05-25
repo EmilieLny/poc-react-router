@@ -1,20 +1,18 @@
 import React from 'react';
+import { Menu } from 'antd';
 import { Link } from 'react-router-dom';
 
 function Nav() {
     return (
-        <nav className="Nav">
-            <h3>Logo</h3>
-            <ul className='nav-links'>
-                <Link to="/about">
-                    <li>About</li>
-                </Link>
-                <Link to='/albums'>
-                    <li>Albums</li>
-                </Link>
-
-            </ul>
-        </nav>
+        <Menu
+            style={{ width: 256 }}
+            defaultSelectedKeys={['1']}
+            mode="inline"
+        >
+            <Menu.Item key="1"><Link to="/">HOME</Link></Menu.Item>
+            <Menu.Item key="2"><Link to="/about">About</Link></Menu.Item>
+            <Menu.Item key="3"><Link to='/albums'>Albums</Link></Menu.Item>
+        </Menu>
     );
 }
 

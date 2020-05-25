@@ -1,19 +1,14 @@
+h1.main-title {
+  text-align: center;
+  background-color: #1890ff;
+  color: white;
+}
+
 .App {
+  display: flex;
   text-align: center;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 20px;
-  background-color: thistle;
-}
-
-nav ul.nav-links {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
+.App-content {
+  flex: 1 0 auto;
 }
