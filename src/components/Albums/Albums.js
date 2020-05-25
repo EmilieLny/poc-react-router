@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Shop() {
+function Albums() {
 
     const [albums, setAlbums] = useState([])
 
@@ -17,15 +17,15 @@ function Shop() {
 
 
     return (
-        <div className="Shop">
-            <h1>Shop</h1>
+        <div className="Albums">
+            <h1>Albums</h1>
             {albums.map(
                 album => (<p key={album.id}>
-                    <Link to={`shop/${album.id}`}>{album.title}</Link>
+                    <Link to={`albums/${album.id}`}>{album.title}</Link>
                 </p>)
             )}
         </div>
     );
 }
 
-export default Shop;
+export default Albums;
